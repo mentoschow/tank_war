@@ -1,0 +1,10 @@
+E:\github repository\tank_war\Tank War\bin\Debug\Tank War.exe.config
+E:\github repository\tank_war\Tank War\bin\Debug\Tank War.exe
+E:\github repository\tank_war\Tank War\bin\Debug\Tank War.pdb
+E:\github repository\tank_war\Tank War\obj\Debug\Tank War.csproj.AssemblyReference.cache
+E:\github repository\tank_war\Tank War\obj\Debug\Tank_War.Form1.resources
+E:\github repository\tank_war\Tank War\obj\Debug\Tank_War.Properties.Resources.resources
+E:\github repository\tank_war\Tank War\obj\Debug\Tank War.csproj.GenerateResource.cache
+E:\github repository\tank_war\Tank War\obj\Debug\Tank War.csproj.CoreCompileInputs.cache
+E:\github repository\tank_war\Tank War\obj\Debug\Tank War.exe
+E:\github repository\tank_war\Tank War\obj\Debug\Tank War.pdb
