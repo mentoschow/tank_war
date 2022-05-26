@@ -46,14 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bullet.cs" />
+    <Compile Include="Effect.cs" />
+    <Compile Include="Enemy.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameFramework.cs" />
+    <Compile Include="GameObject.cs" />
+    <Compile Include="GameObjectManager.cs" />
+    <Compile Include="ImmovaleObject.cs" />
+    <Compile Include="MovableObject.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoundManager.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,6 +75,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +89,165 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Boss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\BulletDown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\BulletLeft.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\BulletRight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\BulletUp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\EXP1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\EXP2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\EXP3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\EXP4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\EXP5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GameOver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GEMAPPLE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GEMARROW.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GEMBLOW.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GEMCLOCK.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GEMGRENADE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GEMHAT.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GEMSTAR.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GEMTANK.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GrayDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GrayLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GrayRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GrayUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GreenDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GreenLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GreenRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\GreenUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\MyTankDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\MyTankLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\MyTankRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\MyTankUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\QuickDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\QuickLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\QuickRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\QuickUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\SlowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\SlowLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\SlowRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\SlowUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Star1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Star2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Star3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\steel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\YellowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\YellowLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\YellowRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\YellowUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sounds\add.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sounds\blast.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sounds\fire.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sounds\hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sounds\start.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
